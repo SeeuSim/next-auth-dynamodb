@@ -63,7 +63,11 @@ chmod +x ./next-auth-dynamo.sh
 ```sh
 npm install
 
+# If doing so, change the DYNAMODB_ENDPOINT to localhost
 npm run dev
+
+##OR
+docker-compose up --build
 ```
 
 7. To login, simply click the `sign in` button at path "/".
