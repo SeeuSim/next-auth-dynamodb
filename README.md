@@ -61,13 +61,12 @@ chmod +x ./next-auth-dynamo.sh
 6. You're all set! Simply run these commands to set up the packages and the repo, and start the app:
 
 ```sh
-npm install
-
-# If doing so, change the DYNAMODB_ENDPOINT to localhost
-npm run dev
+docker-compose up --build
 
 ##OR
-docker-compose up --build
+# If doing so, change the DYNAMO_ENDPOINT to localhost
+npm install
+npm run dev
 ```
 
 7. To login, simply click the `sign in` button at path "/".
